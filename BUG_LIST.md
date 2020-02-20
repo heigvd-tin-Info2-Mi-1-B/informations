@@ -1,6 +1,11 @@
 # BUG_LIST.md
 Liste des problèmes courants et comment les résoudre...
 
+## Sommaire
+* [Utilisation de container Linux impossible](#utilisation-de-container-linux-impossible)
+* [Démarrage de Docker impossible](#démarrage-de-docker-impossible)
+* [Fichiers locaux inaccessibles](#fichiers-locaux-inaccessibles)
+  
 ## Utilisation de container Linux impossible
 Message d'erreur :
 ```console
@@ -13,6 +18,7 @@ Raison : Docker est *actuellement* configuré pour faire fonction des containers
 Solution :
 - Cliquer sur l'icone Docker de la barre des tâche.
 - Appuyer sur 'Switch to Linux containers...'
+- Appuyer sur 'Switch'
 
 ## Démarrage de Docker impossible
 Message d'erreur :
