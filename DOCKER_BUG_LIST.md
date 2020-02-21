@@ -1,4 +1,4 @@
-# BUG_LIST.md
+# DOCKER_BUG_LIST.md
 Liste des problèmes courants et comment les résoudre...
 
 ## Sommaire
@@ -6,7 +6,7 @@ Liste des problèmes courants et comment les résoudre...
 * [Démarrage de Docker impossible](#démarrage-de-docker-impossible)
 * [Fichiers locaux inaccessibles](#fichiers-locaux-inaccessibles)
   
-## Utilisation de container Linux impossible
+---
 Message d'erreur :
 ```console
 > docker run -it -p 127.0.0.1:8080:8080 -v 'WORKDIR:path\to\dir' -v 'WORKDIR:path\to\dir' 'container\'
@@ -20,7 +20,7 @@ Solution :
 - Appuyer sur 'Switch to Linux containers...'
 - Appuyer sur 'Switch'
 
-## Démarrage de Docker impossible
+---
 Message d'erreur :
 ```console
 >
@@ -48,7 +48,7 @@ Solution :
 - Eteindre et rallumer le PC en suivant les commandes proposé en bas de l'écran.
 
 
-## Fichiers locaux inaccessibles
+---
 Message d'erreur :
 ```console
 > docker run -it -p 127.0.0.1:8080:8080 -v 'WORKDIR:path\to\dir' -v 'WORKDIR:path\to\dir' 'container\'
@@ -64,3 +64,15 @@ Solution :
 - Appuyer sur 'Shared Drives' dans la colonne de gauche.
 - Cocher les disques C:/ et D:/.
 - Appuyer sur 'Apply' en bas.
+
+---
+Message d'erreur :
+```console
+>
+```
+Raison : Docker doit être lancé avec les droits d'administrateurs
+
+Solution :
+- Cliquer sur l'icone Docker de la barre des tâche.
+- Appuyer sur 'Quit Docker Desktop'
+- Faire un clic droit sur 'Docker Desktop' dans les programmes, et selectionner ('Plus')>'Run as administrator'
