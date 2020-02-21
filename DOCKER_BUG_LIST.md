@@ -2,14 +2,16 @@
 Liste des problèmes courants et comment les résoudre...
 
 ## Sommaire
-* [Utilisation de container Linux impossible](#utilisation-de-container-linux-impossible)
-* [Démarrage de Docker impossible](#démarrage-de-docker-impossible)
-* [Fichiers locaux inaccessibles](#fichiers-locaux-inaccessibles)
-  
+- [Utilisation de container Linux impossible](#utilisation-de-container-linux-impossible)
+- [Démarrage de Docker impossible](#démarrage-de-docker-impossible)
+- [Fichiers locaux inaccessibles](#fichiers-locaux-inaccessibles)
+- [Docker ne tourne pas avec les droits administrateur](#docker-ne-tourne-pas-avec-les-droits-administrateur)
+
 ---
+#### Utilisation de container Linux impossible
 Message d'erreur :
 ```console
-> docker run -it -p 127.0.0.1:8080:8080 -v 'WORKDIR:path\to\dir' -v 'WORKDIR:path\to\dir' 'container\'
+> docker run -it -p 127.0.0.1:8080:8080 -v 'WORKDIR:path\to\dir' -v 'WORKDIR:path\to\dir' 'container'
 path\to\file\docker.exe: image operating system "linux" cannot be used on this platform.
 See 'path\to\file\docker.exe run --help'.
 ```
@@ -21,6 +23,7 @@ Solution :
 - Appuyer sur 'Switch'
 
 ---
+#### Démarrage de Docker impossible
 Message d'erreur :
 ```console
 >
@@ -49,9 +52,10 @@ Solution :
 
 
 ---
+#### Fichiers locaux inaccessibles
 Message d'erreur :
 ```console
-> docker run -it -p 127.0.0.1:8080:8080 -v 'WORKDIR:path\to\dir' -v 'WORKDIR:path\to\dir' 'container\'
+> docker run -it -p 127.0.0.1:8080:8080 -v 'WORKDIR:path\to\dir' -v 'WORKDIR:path\to\dir' 'container'
 path\to\file\docker.exe: Error response from daemon: Mount denied:
 The source path "WORKDIR" doesn't exist and is not known to Docker.
 See 'path\to\file\docker.exe run --help'.
@@ -66,11 +70,16 @@ Solution :
 - Appuyer sur 'Apply' en bas.
 
 ---
+#### Docker ne tourne pas avec les droits administrateur
 Message d'erreur :
 ```console
->
+> docker run -it -p 127.0.0.1:8080:8080 -v 'WORKDIR:path\to\dir' -v 'WORKDIR:path\to\dir' 'container'
+error during connect: Get http://link/: open //./pipe/docker_engine:
+The system cannot find the file specified. In the default daemon configuration on Windows, 
+the docker client must be run elevated to connect. 
+This error may also indicate that the docker daemon is not running.
 ```
-Raison : Docker doit être lancé avec les droits d'administrateurs
+Raison : Docker doit être lancé au moins une fois avec les droits d'administrateurs
 
 Solution :
 - Cliquer sur l'icone Docker de la barre des tâche.
