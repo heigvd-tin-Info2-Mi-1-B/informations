@@ -6,7 +6,7 @@ Liste des problèmes courants et comment les résoudre...
 - [Démarrage de Docker impossible](#démarrage-de-docker-impossible)
 - [Fichiers locaux inaccessibles](#fichiers-locaux-inaccessibles)
 - [Docker ne tourne pas avec les droits administrateur](#docker-ne-tourne-pas-avec-les-droits-administrateur)
-
+- [Port inaccessible](#port-inaccessible)
 ---
 #### Utilisation de container Linux impossible
 Message d'erreur :
@@ -85,3 +85,32 @@ Solution :
 - Cliquer sur l'icone Docker de la barre des tâche.
 - Appuyer sur 'Quit Docker Desktop'
 - Faire un clic droit sur 'Docker Desktop' dans les programmes, et selectionner ('Plus')>'Run as administrator'
+
+---
+#### Port inaccessible
+Message d'erreur :
+```console
+> docker run -it -p 127.0.0.1:8080:8080 -v 'WORKDIR:path\to\dir' -v 'WORKDIR:path\to\dir' 'container'
+path\to\file\docker.exe: Error response from daemon: Ports are not available: 
+/forwards/expose/port returned unexpected status: 500
+```
+Raison : Le port 8080 est déjà utilisé, soit par un autre container de Docker, soit par un autre processus
+
+Solution :
+- Vérifier que le container ne tourne pas déjà :
+  ```console
+  > docker ps
+  ```
+- Si un container tourne :
+  - l'arreter :
+    ```console
+    > docker stop <CONTAINER ID>
+    ```
+  - Ré-exécuter la commande initiale :
+    ```console
+    > docker run -it -p 127.0.0.1:8080:8080 -v 'WORKDIR:path\to\dir' -v 'WORKDIR:path\to\dir' 'container'
+    ```
+- Sinon, changer le port sur lequel le container doit tourner :
+  ```console
+  > docker run -it -p 127.0.0.1:8081:8080 -v 'WORKDIR:path\to\dir' -v 'WORKDIR:path\to\dir' 'container'
+  ```
