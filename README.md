@@ -14,5 +14,6 @@ Lien pour le repository des TD : https://github.com/heigvd-tin-Info2-Mi-1-B/TD.
 |17-02-2020 | Présentation, installation github/docker | terminer l'installation par soi-même |
 |18-02-2020 | Revue des concepts INFO1 | partie 1/2 (types, affichage, saisie, opérateurs, struct ctrl, fonctions)|
 |20-02-2020 | Revue des concepts INFO1 | partie 2/2 (pointeurs, tableaux, structures, enum), argc/argv |
+|24-02-2020 | Labo01 (1/2) |  |
 |25-02-2020 | Introduction aux fichiers textes |  |
 |02-03-2020 | Labo01 (2/2) |  |
