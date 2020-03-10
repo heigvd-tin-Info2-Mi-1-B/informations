@@ -17,5 +17,7 @@ Lien pour le repository des TD : https://github.com/heigvd-tin-Info2-Mi-1-B/TD.
 |24-02-2020 | Labo01 (1/2) |  |
 |25-02-2020 | Introduction aux fichiers textes, création d'un fichier texte et écriture |  |
 |02-03-2020 | Labo01 (2/2) |  |
-|25-02-2020 | Lecture d'un fichier texte |  |
+|25-02-2020 | Fichier texte |  |
+|03-03-2020 | Fichier texte |  |
+|05-03-2020 | Fichier binaire |  |
 |09-03-2020 | Labo02 (1/2) |  |
