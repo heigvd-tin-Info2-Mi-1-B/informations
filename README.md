@@ -21,3 +21,4 @@ Lien pour le repository des TD : https://github.com/heigvd-tin-Info2-Mi-1-B/TD.
 |03-03-2020 | Fichier texte |  |
 |05-03-2020 | Fichier binaire |  |
 |09-03-2020 | Labo02 (1/2) |  |
+|10-03-2020 | Lecture entête de fichier binaire type Wave|  |
