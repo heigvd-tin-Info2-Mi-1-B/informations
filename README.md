@@ -23,8 +23,9 @@ Lien pour le repository des TD : https://github.com/heigvd-tin-Info2-Mi-1-B/TD.
 |09-03-2020 | Labo02 (1/2) |  |
 |10-03-2020 | Lecture entête de fichier binaire type Wave|  |
 |23-03-2020 | Labo02 (2/2) |  |
-|24-03-2020 | Fichier texte et allocation dynamique |
-|24-03-2020 | Fichier texte et allocation dynamique |
+|24-03-2020 | Traitement de texte et allocation dynamique de mémoire (1)|
+|24-03-2020 | Traitement de texte et allocation dynamique de mémoire (2)|
 |30-03-2020 | Labo03(1/2) |  |
-|31-03-2020 | Fichier texte et allocation dynamique |
-|02-04-2020 | Fichier texte et allocation dynamique |
+|31-03-2020 | Traitement de texte et allocation dynamique de mémoire (3)|
+|02-04-2020 | Traitement de texte et allocation dynamique de mémoire (4)|
+
