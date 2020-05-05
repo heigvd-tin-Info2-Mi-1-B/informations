@@ -34,4 +34,5 @@ Lien pour le repository des TD : https://github.com/heigvd-tin-Info2-Mi-1-B/TD.
 |23-03-2020 | Unions, Struct, Enum |
 |27-04-2020 | Labo04(2/2) |  |
 |28-04-2020 | getopt_long |  |
+| 05-05-2020 | Separate compilation |  
 
