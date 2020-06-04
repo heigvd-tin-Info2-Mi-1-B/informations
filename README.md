@@ -40,4 +40,5 @@ Lien pour le repository des TD : https://github.com/heigvd-tin-Info2-Mi-1-B/TD.
 | 19-05-2020 | List with fixed size table |  
 | 26-05-2020 | List with fixed size table |  
 | 02-06-2020 | List with dynamic size table |
+| 04-06-2020 | Pile, File, LinkedList |
 
